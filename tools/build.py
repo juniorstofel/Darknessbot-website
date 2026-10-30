@@ -14,7 +14,7 @@ APP_ID = "1539409410491818075"
 PERMISSIONS = "3533824"
 INVITE = (f"https://discord.com/oauth2/authorize?client_id={APP_ID}"
           f"&permissions={PERMISSIONS}&integration_type=0&scope=bot+applications.commands")
-SITE = "https://juniorstofel.github.io/darknessbot"
+SITE = "https://juniorstofel.github.io/Darknessbot-website"
 UPDATED = {"en": "October 30, 2026", "pt": "30 de outubro de 2026"}
 
 RIOT_LEGAL = {
