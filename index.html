@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>DarknessBot</title>
+<meta name="description" content="Link your Riot account, check anyone’s rank, and post a live game as one image with every player’s numbers. Made for ARAM and ARAM: Mayhem first. Music in the voice channel, same bot.">
+<meta name="theme-color" content="#313338">
+<link rel="canonical" href="https://juniorstofel.github.io/darknessbot/index.html">
+<link rel="alternate" hreflang="en" href="https://juniorstofel.github.io/darknessbot/index.html">
+<link rel="alternate" hreflang="pt" href="https://juniorstofel.github.io/darknessbot/pt/index.html">
+<link rel="icon" href="assets/img/avatar.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="app">
+  <div class="rail" aria-hidden="true">
+    <a class="rail-item rail-current" href="index.html" tabindex="-1"><img src="assets/img/avatar.svg" alt="" width="48" height="48"></a>
+    <span class="rail-sep"></span>
+    <a class="rail-item rail-add" href="https://discord.com/oauth2/authorize?client_id=1539409410491818075&permissions=3533824&integration_type=0&scope=bot+applications.commands" tabindex="-1" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H5a1 1 0 1 1 0-2h6V5a1 1 0 0 1 1-1Z"/></svg></a>
+  </div>
+  <aside class="side" id="channels" aria-label="DarknessBot">
+    <div class="side-head"><a class="side-brand" href="index.html">DarknessBot</a></div>
+    <nav aria-label="DarknessBot">
+      <h2>Information</h2>
+      <ul><li><a class="channel" href="#welcome" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10.9 3.2a1 1 0 0 1 .8 1.2L11 8h4l.8-4a1 1 0 1 1 2 .4L17 8h3a1 1 0 1 1 0 2h-3.4l-.8 4H19a1 1 0 1 1 0 2h-3.6l-.8 4a1 1 0 1 1-2-.4l.7-3.6h-4l-.7 4a1 1 0 1 1-2-.4L7.4 16H4a1 1 0 1 1 0-2h3.8l.8-4H5a1 1 0 0 1 0-2h4l.8-4a1 1 0 0 1 1.1-.8ZM10.6 10l-.8 4h4l.8-4h-4Z"/></svg><span>welcome</span></a></li><li><a class="channel" href="#commands"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10.9 3.2a1 1 0 0 1 .8 1.2L11 8h4l.8-4a1 1 0 1 1 2 .4L17 8h3a1 1 0 1 1 0 2h-3.4l-.8 4H19a1 1 0 1 1 0 2h-3.6l-.8 4a1 1 0 1 1-2-.4l.7-3.6h-4l-.7 4a1 1 0 1 1-2-.4L7.4 16H4a1 1 0 1 1 0-2h3.8l.8-4H5a1 1 0 0 1 0-2h4l.8-4a1 1 0 0 1 1.1-.8ZM10.6 10l-.8 4h4l.8-4h-4Z"/></svg><span>commands</span></a></li><li><a class="channel" href="#riot-data"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10.9 3.2a1 1 0 0 1 .8 1.2L11 8h4l.8-4a1 1 0 1 1 2 .4L17 8h3a1 1 0 1 1 0 2h-3.4l-.8 4H19a1 1 0 1 1 0 2h-3.6l-.8 4a1 1 0 1 1-2-.4l.7-3.6h-4l-.7 4a1 1 0 1 1-2-.4L7.4 16H4a1 1 0 1 1 0-2h3.8l.8-4H5a1 1 0 0 1 0-2h4l.8-4a1 1 0 0 1 1.1-.8ZM10.6 10l-.8 4h4l.8-4h-4Z"/></svg><span>riot-data</span></a></li><li><a class="channel" href="#about"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10.9 3.2a1 1 0 0 1 .8 1.2L11 8h4l.8-4a1 1 0 1 1 2 .4L17 8h3a1 1 0 1 1 0 2h-3.4l-.8 4H19a1 1 0 1 1 0 2h-3.6l-.8 4a1 1 0 1 1-2-.4l.7-3.6h-4l-.7 4a1 1 0 1 1-2-.4L7.4 16H4a1 1 0 1 1 0-2h3.8l.8-4H5a1 1 0 0 1 0-2h4l.8-4a1 1 0 0 1 1.1-.8ZM10.6 10l-.8 4h4l.8-4h-4Z"/></svg><span>about</span></a></li></ul>
+      <h2>Legal</h2>
+      <ul><li><a class="channel" href="privacy.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm6 1.5V8a1 1 0 0 0 1 1h3.5L13 4.5ZM8 12a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H8Zm0 4a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2H8Z"/></svg><span>privacy</span></a></li><li><a class="channel" href="terms.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm6 1.5V8a1 1 0 0 0 1 1h3.5L13 4.5ZM8 12a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H8Zm0 4a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2H8Z"/></svg><span>terms</span></a></li></ul>
+    </nav>
+    <div class="side-foot"><img src="assets/img/avatar.svg" alt="" width="32" height="32"><div><strong>DarknessBot</strong>by Adriano Junior</div></div>
+  </aside>
+  <div class="channel-main">
+    <header class="topbar">
+      <button class="menu-btn" type="button" aria-controls="channels" aria-expanded="false" aria-label="Open channels" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Zm1 5a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5Z"/></svg></button>
+      <div class="topbar-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10.9 3.2a1 1 0 0 1 .8 1.2L11 8h4l.8-4a1 1 0 1 1 2 .4L17 8h3a1 1 0 1 1 0 2h-3.4l-.8 4H19a1 1 0 1 1 0 2h-3.6l-.8 4a1 1 0 1 1-2-.4l.7-3.6h-4l-.7 4a1 1 0 1 1-2-.4L7.4 16H4a1 1 0 1 1 0-2h3.8l.8-4H5a1 1 0 0 1 0-2h4l.8-4a1 1 0 0 1 1.1-.8ZM10.6 10l-.8 4h4l.8-4h-4Z"/></svg><span id="channel-name">welcome</span></div>
+      <div class="topbar-topic">League of Legends and music for Discord servers</div>
+      <div class="topbar-actions">
+        <div class="lang" role="group" aria-label="Language / Idioma"><span aria-current="true">EN</span><a href="pt/index.html" hreflang="pt-BR" lang="pt-BR">PT</a></div>
+        <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1539409410491818075&permissions=3533824&integration_type=0&scope=bot+applications.commands" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H5a1 1 0 1 1 0-2h6V5a1 1 0 0 1 1-1Z"/></svg><span>Add to Discord</span></a>
+      </div>
+    </header>
+    <main class="stream" id="content">
+      <section id="welcome" aria-labelledby="hero-title">
+        <article class="msg hero">
+          <img class="msg-avatar" src="assets/img/avatar.svg" alt="" width="40" height="40"><div class="msg-head"><span class="msg-name bot">DarknessBot</span><span class="badge"><svg viewBox="0 0 12 12" aria-hidden="true"><path fill="currentColor" d="M4.6 8.6 2.3 6.3a.7.7 0 0 1 1-1l1.3 1.3 4.1-4.1a.7.7 0 1 1 1 1L4.6 8.6Z"/></svg>APP</span><span class="msg-time">Today 21:14</span></div>
+          <div class="msg-body">
+            <h1 id="hero-title">League of Legends and music, right inside Discord.</h1>
+            <p class="lede">Link your Riot account, check anyone’s rank, and post a live game as one image with every player’s numbers. Made for ARAM and ARAM: Mayhem first. Music in the voice channel, same bot.</p>
+            <div class="actions">
+              <a class="btn btn-primary btn-lg" href="https://discord.com/oauth2/authorize?client_id=1539409410491818075&permissions=3533824&integration_type=0&scope=bot+applications.commands" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H5a1 1 0 1 1 0-2h6V5a1 1 0 0 1 1-1Z"/></svg>Add to Discord</a>
+              <a class="btn btn-secondary btn-lg" href="#commands">See the commands</a>
+            </div>
+            <p class="fine">Free. No ads, no paid tiers. Built and run by one player for his community.</p>
+          </div>
+        </article>
+        <article class="msg">
+          <div class="msg-avatar user" aria-hidden="true">L</div>
+          <div class="msg-head"><span class="msg-name">Lia</span><span class="msg-time">Today 21:15</span></div>
+          <div class="msg-body"><span class="slash">/lol partida <span class="opt">riotid:</span><span class="val">Noite Clara#DKN</span></span></div>
+        </article>
+        <article class="msg">
+          <img class="msg-avatar" src="assets/img/avatar.svg" alt="" width="40" height="40"><div class="msg-head"><span class="msg-name bot">DarknessBot</span><span class="badge"><svg viewBox="0 0 12 12" aria-hidden="true"><path fill="currentColor" d="M4.6 8.6 2.3 6.3a.7.7 0 0 1 1-1l1.3 1.3 4.1-4.1a.7.7 0 1 1 1 1L4.6 8.6Z"/></svg>APP</span><span class="msg-time">Today 21:15</span></div>
+          <div class="msg-body">
+            <figure class="shot">
+              <a href="assets/img/scoreboard-example.png"><img src="assets/img/scoreboard-example.png" width="1000" height="1276" alt="Example DarknessBot scoreboard for an ARAM: Mayhem game: two teams of five, each player with champion, Riot ID, ARAM rank, ARAM wins, pentakills and champion mastery." loading="eager" decoding="async"></a>
+              <figcaption>Example with fictitious names and numbers. The bot answers in Portuguese.</figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section id="commands" aria-labelledby="commands-title">
+        <h2 class="divider" id="commands-title">Commands</h2>
+        <article class="msg">
+          <img class="msg-avatar" src="assets/img/avatar.svg" alt="" width="40" height="40"><div class="msg-head"><span class="msg-name bot">DarknessBot</span><span class="badge"><svg viewBox="0 0 12 12" aria-hidden="true"><path fill="currentColor" d="M4.6 8.6 2.3 6.3a.7.7 0 0 1 1-1l1.3 1.3 4.1-4.1a.7.7 0 1 1 1 1L4.6 8.6Z"/></svg>APP</span><span class="msg-time">Today 21:15</span></div>
+          <div class="msg-body">
+            <p>Everything the bot does today. Type / in any channel the bot can see.</p>
+            <div class="picker"><div class="picker-group"><h3>League of Legends</h3><dl><div class="cmd"><dt>/lol vincular</dt><dd>Link your Riot account by typing your Riot ID.</dd></div><div class="cmd"><dt>/lol perfil</dt><dd>Level and ranked info for you, a member, or any Riot ID.<span class="opts"><code>membro</code> · <code>riotid</code></span></dd></div><div class="cmd"><dt>/lol partida</dt><dd>The live game as one image: every player with rank, win rate or ARAM numbers, and mastery.<span class="opts"><code>membro</code> · <code>riotid</code></span></dd></div><div class="cmd"><dt>/lol desvincular</dt><dd>Remove the link between your Discord and your Riot account.</dd></div></dl></div><div class="picker-group"><h3>Music</h3><dl><div class="cmd"><dt>/play</dt><dd>Play a song or playlist from YouTube in your voice channel.<span class="opts"><code>busca</code></span></dd></div><div class="cmd"><dt>/queue</dt><dd>Show what is playing and what comes next.</dd></div><div class="cmd"><dt>/skip</dt><dd>Skip the current song, or jump to a position in the queue.<span class="opts"><code>para</code></span></dd></div><div class="cmd"><dt>/pause</dt><dd>Pause or resume.</dd></div><div class="cmd"><dt>/seek</dt><dd>Jump to a point in the song, like 1:30.<span class="opts"><code>tempo</code></span></dd></div><div class="cmd"><dt>/remove</dt><dd>Remove a song from the queue.<span class="opts"><code>posicao</code></span></dd></div><div class="cmd"><dt>/stop</dt><dd>Stop the music, clear the queue and leave the channel.</dd></div></dl></div><div class="picker-group"><h3>Moderation</h3><dl><div class="cmd"><dt>/clear</dt><dd>Delete recent messages, after a confirmation. Moderators only.<span class="opts"><code>quantidade</code> · <code>usuario</code> · <code>canal</code></span></dd></div></dl></div></div>
+          </div>
+        </article>
+      </section>
+
+      <section id="riot-data" aria-labelledby="riot-title">
+        <h2 class="divider" id="riot-title">How we use Riot data</h2>
+        <article class="msg">
+          <img class="msg-avatar" src="assets/img/avatar.svg" alt="" width="40" height="40"><div class="msg-head"><span class="msg-name bot">DarknessBot</span><span class="badge"><svg viewBox="0 0 12 12" aria-hidden="true"><path fill="currentColor" d="M4.6 8.6 2.3 6.3a.7.7 0 0 1 1-1l1.3 1.3 4.1-4.1a.7.7 0 1 1 1 1L4.6 8.6Z"/></svg>APP</span><span class="msg-time">Today 21:15</span></div>
+          <div class="msg-body">
+            <p>DarknessBot reads public League of Legends data from the Riot Games API, on BR1, only when someone runs a command. This is the full list.</p>
+            <div class="data">
+              <table>
+                <caption class="visually-hidden">APIs and what each one is for</caption>
+                <thead><tr><th scope="col">Riot API</th><th scope="col">Used for</th></tr></thead>
+                <tbody><tr><td>account-v1</td><td>Find an account by Riot ID and keep the Riot ID up to date.</td></tr><tr><td>summoner-v4</td><td>Summoner level and profile icon.</td></tr><tr><td>league-v4</td><td>Rank, LP, wins and losses in Solo/Duo and Flex.</td></tr><tr><td>spectator-v5</td><td>Find the game a player is in right now.</td></tr><tr><td>champion-mastery-v4</td><td>Mastery on the champion each player picked.</td></tr><tr><td>challenges-v1</td><td>ARAM and Arena rank, ARAM wins and pentakills.</td></tr></tbody>
+              </table>
+            </div>
+            <ul class="points"><li>Stored: your Discord user ID linked to your Riot PUUID and Riot ID, only after you run <code>/lol vincular</code>. Removed the moment you run <code>/lol desvincular</code>.</li><li>Live game data is reused for 60 seconds, then discarded, so the same game asked twice costs one request.</li><li>Champion images and icons come from Data Dragon and Community Dragon, not from the API.</li><li>Nothing is sold or shared. No ads, no tracking, no analytics on the bot or on this site.</li></ul>
+            <p><strong>Coming next:</strong> Champion win rate in ARAM for every player in a live game, read from each player’s recent matches (match-v5). Finished matches never change, so each one is read once and reused for everyone who played in it.</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <h2 class="divider" id="about-title">about</h2>
+        <article class="msg">
+          <div class="msg-avatar user dev" aria-hidden="true">A</div>
+          <div class="msg-head"><span class="msg-name">Adriano Junior</span><span class="badge">Developer</span></div>
+          <div class="msg-body">
+            <p>I made DarknessBot for Darkness, the League community I play with. It started as our music bot and turned into the place where we check ranks and argue about the live game. Now it’s open to any server.</p>
+            <img class="banner-img" src="assets/img/darkness-banner.png" width="1200" height="300" alt="Darkness" loading="lazy" decoding="async">
+            <div class="actions"><a class="btn btn-secondary" href="join.html" rel="noopener noreferrer">Join the Darkness server</a></div>
+          </div>
+        </article>
+      </section>
+      <div id="demo-replies" aria-live="polite"></div>
+    </main>
+    <footer class="footer">
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="join.html" rel="noopener noreferrer">Join the Darkness server</a>
+      </nav>
+      <p>© 2026 Adriano Junior. DarknessBot is a free, independent project.</p>
+      <p>DarknessBot isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
+    </footer>
+    <div class="composer" hidden>
+      <div class="composer-box">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.7 3.3a1 1 0 0 1 .6 1.3l-6 15a1 1 0 0 1-1.9-.7l6-15a1 1 0 0 1 1.3-.6Z"/></svg>
+        <label class="visually-hidden" for="composer-input">Try a command</label>
+        <input id="composer-input" type="text" autocomplete="off" spellcheck="false" role="combobox"
+          aria-expanded="false" aria-controls="suggest" aria-autocomplete="list" placeholder="Type / to try a command"
+          data-lang="en" data-you="You" data-avatar="assets/img/avatar.svg"
+          data-board="assets/img/scoreboard-example.png" data-note="Example with fictitious names and numbers. The bot answers in Portuguese." data-alt="Example DarknessBot scoreboard for an ARAM: Mayhem game: two teams of five, each player with champion, Riot ID, ARAM rank, ARAM wins, pentakills and champion mastery.">
+        <ul class="suggest" id="suggest" role="listbox" hidden></ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

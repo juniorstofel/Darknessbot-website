@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Avatar do DarknessBot. O "D" vem do letreiro do banner do player (Cinzel Decorative Black,
+       SIL OFL 1.1, Natanael Gama), já em contornos; nenhuma fonte é carregada.
+       O Discord recorta em círculo: tudo que importa fica dentro de r = 420 a partir do centro. -->
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0" stop-color="#1d1033"/>
+      <stop offset="0.55" stop-color="#140c22"/>
+      <stop offset="1" stop-color="#07050c"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#4c1d95" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#4c1d95" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="letra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5f3ff"/>
+      <stop offset="1" stop-color="#c4b5fd"/>
+    </linearGradient>
+    <linearGradient id="anel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="0.5" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+    <filter id="brilhoD" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <clipPath id="circulo"><circle cx="512" cy="512" r="420"/></clipPath>
+    <filter id="brilho" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="470" fill="url(#glow)"/>
+  <!-- Ondas de áudio ao fundo, no mesmo desenho do banner do player -->
+  <g clip-path="url(#circulo)" fill="#8b5cf6" opacity="0.28"><rect x="103.0" y="482.0" width="18" height="60.0" rx="9"/><rect x="143.0" y="472.3" width="18" height="79.3" rx="9"/><rect x="183.0" y="455.6" width="18" height="112.7" rx="9"/><rect x="223.0" y="441.7" width="18" height="140.6" rx="9"/><rect x="263.0" y="381.9" width="18" height="260.2" rx="9"/><rect x="303.0" y="376.6" width="18" height="270.7" rx="9"/><rect x="343.0" y="342.6" width="18" height="338.9" rx="9"/><rect x="383.0" y="324.0" width="18" height="376.1" rx="9"/><rect x="423.0" y="306.1" width="18" height="411.8" rx="9"/><rect x="463.0" y="316.1" width="18" height="391.7" rx="9"/><rect x="503.0" y="319.9" width="18" height="384.2" rx="9"/><rect x="543.0" y="268.5" width="18" height="487.0" rx="9"/><rect x="583.0" y="340.5" width="18" height="343.0" rx="9"/><rect x="623.0" y="332.1" width="18" height="359.8" rx="9"/><rect x="663.0" y="336.9" width="18" height="350.2" rx="9"/><rect x="703.0" y="349.6" width="18" height="324.8" rx="9"/><rect x="743.0" y="404.8" width="18" height="214.3" rx="9"/><rect x="783.0" y="440.4" width="18" height="143.1" rx="9"/><rect x="823.0" y="457.3" width="18" height="109.5" rx="9"/><rect x="863.0" y="470.7" width="18" height="82.6" rx="9"/><rect x="903.0" y="482.0" width="18" height="60.0" rx="9"/></g>
+  <!-- Anel violeta -->
+  <circle cx="512" cy="512" r="420" fill="none" stroke="#7c3aed" stroke-width="28" opacity="0.5" filter="url(#brilho)"/>
+  <circle cx="512" cy="512" r="420" fill="none" stroke="url(#anel)" stroke-width="14"/>
+  <!-- "D" com brilho -->
+  <g transform="translate(512 512) scale(3.9) translate(-219.45 -150)">
+    <path d="M229.08 196.20L179.05 196.20L179.05 194.88L180.77 194.88Q184.20 194.88 186.64 192.44Q189.08 190 189.22 186.56L189.22 111.19Q175.36 112.64 168.23 118.98Q162.16 124.39 158.46 132.84L157.14 132.31Q159.78 118.06 170.80 110.93Q181.82 103.80 198.46 103.80L229.08 103.80Q253.90 103.80 267.82 116.01Q281.75 128.22 281.75 150Q281.75 171.78 267.76 183.99Q253.76 196.20 229.08 196.20M216.28 110.66L216.28 189.60L226.44 189.60Q226.44 189.60 226.44 189.60Q238.72 189.60 245.71 179.11Q252.71 168.61 252.71 150Q252.71 131.39 245.71 120.89Q238.72 110.40 226.44 110.40" fill="#8b5cf6" filter="url(#brilhoD)" opacity="0.9"/>
+    <path d="M229.08 196.20L179.05 196.20L179.05 194.88L180.77 194.88Q184.20 194.88 186.64 192.44Q189.08 190 189.22 186.56L189.22 111.19Q175.36 112.64 168.23 118.98Q162.16 124.39 158.46 132.84L157.14 132.31Q159.78 118.06 170.80 110.93Q181.82 103.80 198.46 103.80L229.08 103.80Q253.90 103.80 267.82 116.01Q281.75 128.22 281.75 150Q281.75 171.78 267.76 183.99Q253.76 196.20 229.08 196.20M216.28 110.66L216.28 189.60L226.44 189.60Q226.44 189.60 226.44 189.60Q238.72 189.60 245.71 179.11Q252.71 168.61 252.71 150Q252.71 131.39 245.71 120.89Q238.72 110.40 226.44 110.40" fill="url(#letra)"/>
+  </g>
+</svg>
